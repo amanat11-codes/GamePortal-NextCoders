@@ -2,15 +2,18 @@
 #include "helpers.h"
 #include "utility.h"
 #include "gameManager.h"
+#include "games.h"
 
-int main(void)
+int play_FindTheSum(void)
 {
     greetUser();
     printf("\n");
     while(1)
     {
-        printf("Would you like to start a new game? (y/n): ");
         char c;
+        while((c = getchar()) != '\n');
+        printf("Would you like to start a new game? (y/n): ");
+
         scanf("%c", &c);
         
         if (c != 'y')
@@ -20,10 +23,10 @@ int main(void)
         generateProblems();
         
         showPoints();
-        while(c = getchar() != '\n');
+        printf("\n");
     }
 
-    printf("Exiting game... Hope you had a great experience!");
+    printf("Exiting game... Hope you had a great experience!\n");
 
     return 0;
 }

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "helpers.h"
 #include "utility.h"
 #include "gameManager.h"
+#include "helpers.h"
 
 extern int REWARD;
 extern int LOSS;

@@ -6,7 +6,7 @@
 #include<ctype.h>
 
 
-void main(){
+int startCalendar(){
 	char *months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
 	   int daysInmonths[]={31,28,31,30,31,30,31,31,30,31,30,31};
 		int i,j,totalDays,weekDays=0,space=0,year;
